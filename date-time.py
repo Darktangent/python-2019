@@ -1,0 +1,10 @@
+from datetime import datetime
+delta=datetime.now() - datetime(1900,12,31)
+now=datetime.now()
+print(delta.days)
+then=datetime(1900,12,31,20,12,59)
+print (then-now)
+whenever=datetime.strptime("2017-12-31-12-12-30",'%Y-%m-%d-%H-%M-%S')
+print(whenever)
+var=whenever.strftime("%Y-%m-%d")
+print(var)
